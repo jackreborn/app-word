@@ -34,8 +34,9 @@ jobs:
       - name: Install dependencies 🔧
         shell: bash
         run: npm ci
+      - run: ls
       - name: Build
-        run: npm run build
+      - run: npm run build
 
   # Single deploy job since we're just deploying
   deploy:
