@@ -31,6 +31,7 @@ jobs:
         with:
             node-version: 20
             cache: 'npm'
+      - run: ls
       - name: Install dependencies 🔧
         shell: bash
         run: npm ci
