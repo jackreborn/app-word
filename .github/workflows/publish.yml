@@ -19,6 +19,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Setup Pages ⚙️
+        uses: actions/configure-pages@v4
+        with:
+          static_site_generator: next
+    
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
